@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font -->
+    <link rel="stylesheet" href="MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- MAIN START -->
+    <div class="container">
+
+        <!-- NAVIGATION LEFT START -->
+        <div class="nav-left nav"><span>Film Studio</span></div>
+        <div class="swiper mySwiper">
+            <div class="slider-nav">
+                <div class="button-next">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="button-prev">
+                    <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                </div>
+            </div>
+
+            <!-- HERO START -->
+            <div class="swiper-wrapper">
+
+                <!-- First Project: Red -->
+                <div class="swiper-slide">
+                    <div class="slider-copy">
+                        <div class="header">Red</div>
+                        <div class="song-details">
+                            <div class="song-name">Project Name</div>
+                            <div class="artist">Artist Name</div>
+                        </div>
+                    </div>
+                    <img src="video gifs/red-final.gif" alt="Red"/>
+                </div>
+
+                <!-- Second Project: VHS -->
+                <div class="swiper-slide">
+                    <div class="slider-copy">
+                        <div class="header">VHS</div>
+                        <div class="song-details">
+                            <div class="song-name">Project Name</div>
+                            <div class="artist">Artist Name</div>
+                        </div>
+                    </div>
+                    <img src="video gifs/screen.gif" alt="VHS"/>
+                </div>
+
+                <!-- Third Project: Headdress-->
+                <div class="swiper-slide">
+                    <div class="slider-copy">
+                        <div class="header">Headdress</div>
+                        <div class="song-details">
+                            <div class="song-name">Project Name</div>
+                            <div class="artist">Artist Name</div>
+                        </div>
+                    </div>
+                    <img src="video gifs/headdress.gif" alt="Headdress"/>
+                </div>
+
+                <!-- Fourth Project: Hypnosis-->
+                <div class="swiper-slide">
+                    <div class="slider-copy">
+                        <div class="header">Hypnosis</div>
+                        <div class="song-details">
+                            <div class="song-name">Project Name</div>
+                            <div class="artist">Artist Name</div>
+                        </div>
+                    </div>
+                    <img src="video gifs/hands.gif" alt="Hypnosis"/>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- NAVIGATION RIGHT START-->
+        <div class="nav-right nav">
+            <div class="nav-items"><i class="fa-solid fa-pause"></i></div>
+            <div class="nav-items">
+                <div>advertising</div>
+                <div>content</div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN -->
+
+
+    <!-- ADDITIONAL CONTENT START -->
+    <div class="content">
+        <div class="bottom-nav">additional content goes below</div>
+    </div>
+    <!-- END ADDITIONAL CONTENT -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>    
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
